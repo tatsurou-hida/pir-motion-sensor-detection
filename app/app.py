@@ -29,8 +29,8 @@ def log(message):
 @wrapper
 def sendToSlack(message):
     log("sending message to slack... message=[" + message + "]")
-    slack = slackweb.Slack(url="https://hooks.slack.com/services/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")
-    slack.notify(text=message)
+    slack = slackweb.Slack(url="https://hooks.slack.com/services/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")
+    slack.notify(text=message, channel="#広島入退室検知")
 
 @wrapper
 def main():
