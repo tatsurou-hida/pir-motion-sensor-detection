@@ -30,7 +30,7 @@ def log(message):
 @wrapper
 def sendToSlack(message):
     log("sending message to slack... message=[" + message + "]")
-    slack = slackweb.Slack(url="https://hooks.slack.com/services/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")
+    slack = slackweb.Slack(url="https://hooks.slack.com/services/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")
     slack.notify(text=message)
 
 @wrapper
