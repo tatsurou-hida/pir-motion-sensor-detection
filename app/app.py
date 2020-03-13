@@ -12,6 +12,7 @@ import RPi.GPIO as GPIO
 from datetime import datetime
 import slackweb
 import configparser
+import os
 
 def wrapper(func):
     @wraps(func)
