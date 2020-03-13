@@ -40,7 +40,7 @@ def main():
     sleeptime = 10
 
     config = configparser.ConfigParser()
-    config.read('config.ini', encoding='utf-8')
+    config.read(os.path.join(os.path.dirname(__file__), 'config.ini'), encoding='utf-8')
     webhook_url = config.get('Slack', 'webhook_url')
 
     GPIO.cleanup()
